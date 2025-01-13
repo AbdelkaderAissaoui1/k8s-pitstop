@@ -36,12 +36,7 @@ spec:
           envFrom:
             - configMapRef:
                 name: pitstop-webapp-configmap
-          volumeMounts:
-            - name: webapp-volume
-              mountPath: /app/client
-      volumes:
-        - name: webapp-volume
-          emptyDir: {}
+
 ---
 apiVersion: v1
 kind: Service
@@ -51,7 +46,7 @@ metadata:
 spec:
   ports:
     - protocol: TCP
-      port: 8080
+      port: 8081
       targetPort: 8080
   type: NodePort
   selector:
