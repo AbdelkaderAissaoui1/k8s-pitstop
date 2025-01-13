@@ -6,7 +6,7 @@ spec:
   template:
     spec:
       containers:
-        - image: devops4project/pitstop-webapp:8ac4eb8
+        - image: devops4project/pitstop-webapp:786fec5
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -19,7 +19,7 @@ spec:
   template:
     spec:
       containers:
-        - image: devops4project/pitstop-webapp:8ac4eb8
+        - image: devops4project/pitstop-webapp:786fec5
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -40,7 +40,7 @@ spec:
     spec:
       containers:
         - name: pitstop-webapp
-          image: devops4project/pitstop-webapp:8ac4eb8
+          image: devops4project/pitstop-webapp:786fec5
           ports:
             - containerPort: 8080
           envFrom:
@@ -63,4 +63,4 @@ spec:
   template:
     spec:
       containers:
-        - image: devops4project/pitstop-webapp:8ac4eb8
+        - image: devops4project/pitstop-webapp:786fec5
