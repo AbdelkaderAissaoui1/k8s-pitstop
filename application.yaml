@@ -6,7 +6,7 @@ metadata:
 spec:
   project : default
   source:
-    repoURL: https://github.com/zakachaara/k8s-pitstop.git
+    repoURL: https://github.com/AbdelkaderAissaoui1/k8s-pitstop.git
     targetRevision: HEAD
     path: pitstop
 
